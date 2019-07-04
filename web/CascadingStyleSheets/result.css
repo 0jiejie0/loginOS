@@ -1,0 +1,68 @@
+.result {
+    margin: 0px auto;
+}
+
+.result th {
+    background-color: #4472c4;
+    color: white;
+    font-family: "华文细黑";
+    border-bottom: white solid 1px;
+    padding: 5px;
+}
+
+.result td {
+    text-align: center;
+    border: none;
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+td .left, td .right {
+    width: auto;
+    padding: unset;
+    margin: auto 6px;
+}
+
+.option form {
+    display: inline;
+}
+
+.option input {
+    padding: 0px;
+    border: none;
+    background: none;
+    font-size: medium;
+    outline: none;
+    cursor: pointer;
+}
+
+.option input:active {
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+}
+
+.seque {
+    width: 50px;
+}
+
+.name {
+    width: 75px;
+}
+
+.gender {
+    width: 50px;
+}
+
+.major {
+    width: 200px;
+}
+
+.department {
+    width: 150px;
+}
+
+.option {
+    width: 80px;
+}

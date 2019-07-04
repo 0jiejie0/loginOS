@@ -1,0 +1,125 @@
+body {
+    /*background-color: red;*/
+}
+
+.query {
+    padding-top: 20px;
+    /*padding-right: 25%;*/
+    padding-bottom: 5px;
+    padding-left: 2.5%;
+}
+
+.result tr:nth-child(even) {
+    background-color: #e9ebf5;
+}
+
+.result tr:nth-child(odd) {
+    background-color: #cfd5ea;
+}
+
+.add {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 14.1%;
+}
+
+.query a img {
+    position: relative;
+    top: 5px;
+    width: 20px;
+}
+
+.add > span {
+    color: #0005ff;
+    font-weight: bold;
+}
+
+.add div {
+    display: inline-block;
+    color: red;
+    width: 160px;
+}
+
+.add div span {
+    /*margin-right: 99%;*/
+}
+
+.query form, .add form, .alter form {
+    display: inline;
+}
+
+#que_name, #que_gender, #que_major, #que_depart, #add_name, #add_gender, #add_major, #add_depart {
+    height: 30px;
+    border-color: #1f65ff;
+    border-width: 1px;
+    outline: none;
+}
+
+#que_name, #add_name, #alt_name {
+    width: 81px;
+}
+
+#que_gender, #add_gender, #alt_gender {
+    width: 56px;
+    /*color: gray;*/
+}
+
+#que_major, #add_major, #alt_major {
+    width: 208px;
+}
+
+#que_depart, #add_depart, #alt_depart {
+    width: 158px;
+}
+
+#que_sub, #queall_sub, #add_sub, #alt_sub {
+    outline: none;
+    width: 75px;
+    height: 35px;
+    color: white;
+    font-size: medium;
+    background-color: #1f65ff;
+    border: none;
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
+
+#que_sub {
+    width: 50px;
+}
+
+#add_sub {
+    height: 35px;
+    width: 80px;
+}
+
+
+.altline input:not(#alt_sub), .altline select {
+    background: none;
+    border: none;
+    outline: none;
+    height: 23px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#alt_sub {
+    height: 23px;
+    font-size: 16px;
+}
+
+.turn {
+    margin-top: 10px;
+}
+
+.turn input {
+    height: 23px;
+    width: 50px;
+    border-color: #4674f0;
+    border-width: 1px;
+    border-radius: 3px;
+    background: none;
+    outline: none;
+    padding: 0px;
+    margin: 4px;
+}

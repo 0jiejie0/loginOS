@@ -1,0 +1,169 @@
+body {
+    width: 1200px;
+    margin: 0px auto;
+    /*background-color: #082e1d;*/
+    position: relative;
+}
+
+hr {
+    border: none;
+}
+
+.top {
+    width: 700px;
+    height: 85px;
+    margin: 0px auto;
+    margin-top: 30px;
+    /*background-color: #805e5e;*/
+}
+
+.logo {
+    width: 300px;
+    float: left;
+}
+
+#logo {
+    height: 60px;
+}
+
+.title {
+    float: left;
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.user {
+    float: right;
+    margin-top: 35px;
+}
+
+.top > hr {
+    border-top: 2px solid #805e5e;
+    width: 120%;
+    position: relative;
+    right: 10%;
+    top: 20px;
+}
+
+.medium {
+    padding-top: 3px;
+    text-align: center;
+    overflow: hidden;
+    /*background-color: #52a5ff;*/
+    margin-bottom: 90px;
+}
+
+#headport, .right > form {
+    padding-top: 85px;
+}
+
+.left {
+    float: left;
+    width: 600px;
+}
+
+#headport {
+    width: 380px;
+    float: right;
+    padding-bottom: 70px;
+}
+
+.right {
+    float: right;
+    width: 410px;
+    padding-top: 15px;
+    padding-right: 150px;
+}
+
+.rleft {
+    float: left;
+    padding: 12px 0px;
+}
+
+.rcenter {
+    padding-right: 180px;
+    padding-top: 120px;
+}
+
+.rright {
+    float: right;
+    padding: 12px 0px;
+}
+
+.rrightl {
+    float: left;
+}
+
+.rrightr {
+    float: right;
+    width: 160px;
+}
+
+.rrightr > span {
+    display: block;
+    /*word-wrap: break-word;折行*/
+    /*width: 200px;*/
+    padding-left: 10px;
+    color: red;
+}
+
+.inputstyle {
+    height: 30px;
+    width: 170px;
+    position: relative;
+    bottom: 4px;
+    border-color: #1f65ff;
+    border-width: 1px;
+}
+
+.fgotorrgst {
+    color: gray;
+    text-decoration: none;
+}
+
+#forgot, #regist {
+    padding-top: 30px;
+}
+
+#btn_sub {
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-size: medium;
+    background-color: #52a5ff;
+    border: none;
+}
+
+input:active {
+    box-shadow: 0 0 0 1px #4674f0, 0 0 0 2px rgba(58, 199, 189, 0);
+}
+
+#forgot {
+    float: left;
+    padding-left: 10px;
+}
+
+#regist {
+    float: right;
+    padding-right: 190px;
+}
+
+.bottom {
+    text-align: center;
+    width: 65%;
+    font-size: 80%;
+    color: rgba(84, 84, 84, 0.75);
+    float: bottom;
+    padding-top: 1px;
+    padding-bottom: 45px;
+    /*background-color: #805e5e;*/
+    position: absolute;
+    bottom: -90px;
+    margin: auto 17.5%;
+}
+
+.bottom > hr {
+    border-top: 1px solid rgba(84, 84, 84, 0.53);
+    width: 100%;
+    height: 14px;
+}

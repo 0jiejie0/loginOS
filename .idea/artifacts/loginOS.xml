@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="loginOS">
+    <output-path>$PROJECT_DIR$/out/artifacts/loginOS</output-path>
+    <root id="archive" name="loginOS.war">
+      <element id="artifact" artifact-name="pro0003loginOS:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="application_server_libraries" name="Tomcat 8.5.38" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
