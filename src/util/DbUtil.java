@@ -12,8 +12,8 @@ public class DbUtil {
     private static PreparedStatement preparedStatement = null;
     private static ResultSet resultSet = null;
 
-    public static synchronized Connection getConnection() throws SQLException{
-        if (connection!=null)
+    public static synchronized Connection getConnection() throws SQLException {
+        if (connection != null)
             close();
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -32,7 +32,7 @@ public class DbUtil {
     private static PreparedStatement getPrepareStatement(String sql, Object... args) throws SQLException {
         preparedStatement = getConnection().prepareStatement(sql);
         for (int i = 0; i < args.length; i++) {
-            preparedStatement.setObject(1+i, args[i]);
+            preparedStatement.setObject(1 + i, args[i]);
         }
         return preparedStatement;
     }
@@ -50,8 +50,8 @@ public class DbUtil {
         return resultSet;
     }
 
-    public static ResultSet executeQuery(String sql, Object... args)throws SQLException {
-        resultSet= getPrepareStatement(sql,args).executeQuery();
+    public static ResultSet executeQuery(String sql, Object... args) throws SQLException {
+        resultSet = getPrepareStatement(sql, args).executeQuery();
         return resultSet;
     }
 
