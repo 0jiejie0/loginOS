@@ -5,12 +5,12 @@ import java.sql.*;
 public class DbUtil {
     private static final String url = "jdbc:mysql://localhost:3306/userdb?useUnicode=true&characterEncoding=UTF-8";
     private static final String user = "root";
-//    private static final String password = "xkmSql2019";
-    private static final String password = "312430.xy";
-    protected static Connection connection = null;
-    protected static Statement statement = null;
-    protected static PreparedStatement preparedStatement = null;
-    protected static ResultSet resultSet = null;
+    private static final String password = "xkmSql2019";
+//    private static final String password = "312430.xy";
+    private static Connection connection = null;
+    private static Statement statement = null;
+    private static PreparedStatement preparedStatement = null;
+    private static ResultSet resultSet = null;
 
     public static synchronized Connection getConnection() throws SQLException{
         if (connection!=null)
@@ -24,12 +24,12 @@ public class DbUtil {
         return connection;
     }
 
-    public static Statement getStatement() throws SQLException {
+    private static Statement getStatement() throws SQLException {
         statement = getConnection().createStatement();
         return statement;
     }
 
-    public static PreparedStatement getPrepareStatement(String sql, Object... args) throws SQLException {
+    private static PreparedStatement getPrepareStatement(String sql, Object... args) throws SQLException {
         preparedStatement = getConnection().prepareStatement(sql);
         for (int i = 0; i < args.length; i++) {
             preparedStatement.setObject(1+i, args[i]);
